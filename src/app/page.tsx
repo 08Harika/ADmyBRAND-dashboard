@@ -68,6 +68,17 @@ export default function DashboardPage() {
 
   return (
     <main className="p-6 space-y-10">
+      {/* Project Title */}
+      <motion.div
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+      >
+        <h1 className="text-4xl font-bold mb-2">ADmyBRAND Insights Dashboard</h1>
+        <p className="text-gray-500 text-md">AI-Powered Performance Metrics for Digital Marketing Agencies</p>
+      </motion.div>
+
+      {/* Cards Section */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -79,6 +90,7 @@ export default function DashboardPage() {
         ))}
       </motion.div>
 
+      {/* Charts Section */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -103,6 +115,7 @@ export default function DashboardPage() {
         </div>
       </motion.div>
 
+      {/* Pie Chart Section */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -117,6 +130,7 @@ export default function DashboardPage() {
         )}
       </motion.div>
 
+      {/* Data Table Section */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
